@@ -17,6 +17,10 @@ export default function QueryProcessor(query: string): string {
     return "fengde";
   }
 
+  if (q.includes("who am i")) {
+    return "小🐷";
+  }
+
   if (q.includes("name")) {
     return "Rohan";
   }
