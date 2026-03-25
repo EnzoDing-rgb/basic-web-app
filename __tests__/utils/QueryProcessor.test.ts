@@ -37,4 +37,10 @@ describe("QueryProcessor", () => {
         const response: string = QueryProcessor(query);
         expect(response).toBe("小🐷");
     })
+
+    test('should return small manman', () => {
+        const query = "小manman";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe("小👶🏻👶🏻");
+    })
 });

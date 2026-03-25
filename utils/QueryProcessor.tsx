@@ -21,6 +21,10 @@ export default function QueryProcessor(query: string): string {
     return "小🐷";
   }
 
+  if (q.includes("小manman")) {
+    return "小👶🏻👶🏻";
+  }
+
   if (q.includes("name")) {
     return "Rohan";
   }
