@@ -25,6 +25,15 @@ export default function QueryProcessor(query: string): string {
     return "小🐷";
   }
 
+  if (
+    q.includes("who are you") ||
+    q.includes("who're you") ||
+    q.includes("who are u") ||
+    q.includes("who r you")
+  ) {
+    return "小🐷";
+  }
+
   if (q.includes("小manman")) {
     return "小👶🏻👶🏻";
   }
