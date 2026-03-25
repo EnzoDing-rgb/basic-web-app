@@ -1,6 +1,10 @@
 export default function QueryProcessor(query: string): string {
   const q = query.toLowerCase();
 
+  if (q.includes("enzo")) {
+    return "ding";
+  }
+
   if (q.includes("shakespeare")) {
     return (
       "William Shakespeare (26 April 1564 - 23 April 1616) was an " +

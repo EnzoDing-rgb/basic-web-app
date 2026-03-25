@@ -43,4 +43,10 @@ describe("QueryProcessor", () => {
         const response: string = QueryProcessor(query);
         expect(response).toBe("小👶🏻👶🏻");
     })
+
+    test('should return ding for enzo', () => {
+        const query = "Enzo 返回 ding";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe("ding");
+    })
 });
